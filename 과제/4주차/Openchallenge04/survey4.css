@@ -1,0 +1,39 @@
+
+
+form {
+	background : pink;
+	border-style : none;
+	border-width : 1px;
+	margin-left : 10px;
+	margin-right : 10px;
+    text-indent : 1em;
+}
+.formspan {
+	font-family : gothic;
+	font-weight : bold;
+	color : blue;
+}
+
+h1{
+    color:brown;
+    text-align:center;
+}
+
+.under{
+    font-family : 휴먼편지체;
+    text-indent : 1em;
+    background:orange;
+    width:525px;
+    height:20px;
+    text-indent : 1em;
+    border-radius : 10px 10px 10px 10px
+}
+
+.firsttext{
+    font-family : 휴먼편지체;
+    text-indent : 1em;
+}
+
+#abc{
+    font-family : 휴먼편지체;
+}

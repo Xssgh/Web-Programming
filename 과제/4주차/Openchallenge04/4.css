@@ -1,0 +1,27 @@
+body{background-color:aliceblue;}
+.p1{
+    color:brown;
+    text-align:center;
+}
+.blurText{
+    color:blue;
+    text-shadow:3px 3px 5px skyblue;}
+.font{font-family : 휴먼편지체;
+        text-indent:1em;}
+div{ border : 1px dotted black;}
+.last{
+    font-family : 휴먼편지체;
+    text-indent : 1em;
+    background:orange;
+    width:1600px;
+    height:55px;
+    border-radius : 10px 10px 10px 10px
+}
+.reallast{
+    font-family : 휴먼편지체;
+    text-indent : 1em;
+}
+h2{
+    color:blue;
+    text-shadow:3px 3px 5px skyblue;
+}
