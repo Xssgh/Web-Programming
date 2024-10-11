@@ -1,0 +1,37 @@
+td{text-align:center;}
+div.brown{
+    background-color:brown;
+    border-style:solid;
+    border-color:brown;
+    color:brown;
+}
+div.sky{
+    background-color:skyblue;
+    border-style:solid;
+    border-color:skyblue;
+    color:skyblue;
+}
+div.gold{
+    background-color:Gold;
+    border-style:solid;
+    border-color:gold;
+    color:gold;
+}
+div.vio{
+    background-color:blueviolet;
+    border-style:solid;
+    border-color:blueviolet;
+    color:blueviolet;
+}
+div.orange{
+    background-color:darkorange;
+    border-style:solid;
+    border-color:darkorange;
+    color:darkorange;
+}
+div.oliv{
+    background-color:olivedrab;
+    border-style:solid;
+    border-color:olivedrab;
+    color:olivedrab;
+}
