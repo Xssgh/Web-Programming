@@ -1,0 +1,63 @@
+#firsthr{
+    border:3px dotted black;
+}
+
+#introduce{
+    text-align:center;
+}
+.progress{
+    border:1px solid black;
+    right:20%;
+}
+#info{
+    text-align:center;
+    border:2px solid black;
+}
+#info>ul{
+    text-align:left;
+}
+#menu{
+    text-align: right;
+    background:black;
+}
+#menu>ul{
+    margin:0;
+    padding:0px;
+    width:600px;
+}
+#menu>ul>li{
+    display:inline-block;
+    list-style-type: none;
+    padding: 0px, 15px;
+}
+#menu>ul>li>a{
+    color:white;
+    text-decoration: none;
+}
+html{
+    border:3px solid black;
+    background: linen;
+    padding:20px;
+    margin:50px;
+}
+
+
+#future{
+
+    border:2px solid black;
+    text-align:center;
+
+}
+tbody{
+    background:black;
+    color:white;
+}
+#picture{
+    background-image:url("realheart.png");
+
+    height:200px;
+    border:3px solid black;
+    margin:10px
+
+    
+}
