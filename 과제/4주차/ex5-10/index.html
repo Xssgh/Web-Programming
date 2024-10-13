@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>애니메이션</title>
+    <style>
+        @keyframes move_left {
+            0% {
+                margin-left: 100%;
+            }
+            100% {
+                margin-right: 0%;
+            }
+        }
+
+        p {
+            animation-name: move_left;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+        }
+    </style>
+</head>
+<body>
+<h3>애니메이션 응용</h3>
+<hr>
+<p><img src="data:image/png;base64,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">질문 있습니다.</p>
+</body>
+</html>
