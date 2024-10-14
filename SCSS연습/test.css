@@ -1,0 +1,12 @@
+@charset "UTF-8";
+body {
+  font-family: 휴먼편지체;
+  font-size: 90px;
+}
+
+a {
+  color: red;
+}
+a:hover {
+  color: blue;
+}/*# sourceMappingURL=test.css.map */
