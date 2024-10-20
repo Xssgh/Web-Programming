@@ -1,7 +1,5 @@
-@charset "UTF-8";
 body {
-  font-family: 휴먼편지체;
-  font-size: 90px;
+  font: Helvetica, Arial, sans-serif;
 }
 
 a {

@@ -5,15 +5,15 @@ $font-stack: Helvetica, Arial;
 $primary-color: #333;
 
 body {
-  font-family: 휴먼편지체;
-  font-size:90px;
+  $font-stack: list.append($font-stack, sans-serif);
+  font: $font-stack;
 }
 
 a {
-  color: red;
+  color:red;
 
   &:hover{
-    color: blue;
+    color:blue;
   }
 }
 
