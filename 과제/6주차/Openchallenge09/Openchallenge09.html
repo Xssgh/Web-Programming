@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>마우스 클릭 연습</title>
+    <style>
+        img{
+    width: 50px;
+    height: 50px;
+}
+        table {
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid blue;
+            width: 50px;
+            height: 50px;
+            padding: 0px;
+        }
+    </style>
+    <script>
+        var select = 0; 
+        var img = new Image();
+        
+        img.src = ("data:image/jpeg;base64,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");
+
+        function set() {
+            var table = document.getElementById("table1");
+
+            for (var i = 0; i < 10; i++) {
+                var row = document.createElement("tr");
+
+                for (var j = 0; j < 10; j++) {
+                    var col = document.createElement("td");
+                    col.innerHTML = "<img src=''>"
+                    row.appendChild(col);
+                }
+                table.appendChild(row);
+            }
+            for (var i = 0; i < 100; i++) {
+                document.images[i].onclick = moveImage;
+            }
+            moveImage(); 
+        }
+        function moveImage() { 
+            document.images[select].src = "";
+            select = Math.floor(Math.random() * 100);
+            document.images[select].src = img.src;
+        }
+    </script>
+</head>
+<body onload="set()">
+<h3>마우스 클릭 연습</h3>
+<hr>
+<table id="table1"></table>
+</body>
+</html>
