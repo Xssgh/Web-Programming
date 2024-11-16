@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>선으로 삼각형 그리기</title>
+</head>
+<body>
+
+<canvas id="myCanvas"
+style="background-color:aliceblue"
+width="500" height="300"></canvas>
+<script>
+let canvas = document.getElementById("myCanvas");
+let context = canvas.getContext("2d");
+//장
+context.beginPath(); 
+context.moveTo(120, 20); 
+context.lineTo(160, 20); 
+context.moveTo(160, 20);
+context.lineTo(120, 60);
+context.moveTo(130, 50);
+context.lineTo(160, 70);
+
+context.moveTo(180, 20);
+context.lineTo(180, 80);
+context.moveTo(180, 40);
+context.lineTo(200, 40);
+context.moveTo(170, 100);
+context.arc(150, 100, 20, 0, 2*Math.PI, false);
+
+//현
+context.moveTo(250, 20);
+context.lineTo(280, 20);
+context.moveTo(240, 40);
+context.lineTo(290, 40);
+context.moveTo(280, 60);
+context.arc(262, 70, 20, 0, 2*Math.PI, false);
+context.moveTo(290, 62);
+context.lineTo(310, 62);
+context.moveTo(290, 72);
+context.lineTo(310, 72);
+context.moveTo(310, 50);
+context.lineTo(310, 100);
+context.moveTo(250, 110);
+context.lineTo(250, 130);
+context.lineTo(300, 130);
+
+//호
+context.moveTo(370, 20);
+context.lineTo(400, 20);
+context.moveTo(360, 40);
+context.lineTo(410, 40);
+context.moveTo(402, 60);
+context.arc(385, 70, 20, 0, 2*Math.PI, false);
+context.moveTo(385, 100);
+context.lineTo(385, 130);
+context.moveTo(400, 130);
+context.lineTo(360, 130);
+
+
+
+context.strokeStyle="black"; // 선의 색
+context.stroke(); // 경로를 캔버스에 그린다
+</script>
+</body>
+</html>
