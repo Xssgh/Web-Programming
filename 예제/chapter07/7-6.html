@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방문 시간에 따라 바뀌는 페이지</title>
+</head>
+<body>
+    <h3>방문 시간에 따라 바뀌는 페이지</h3>
+    <hr>
+    <script>
+        let time=new Date();
+        if(time.getSeconds()%2==0)
+            document.body.style.backgroundColor= "violet";
+        else
+            document.body.style.backgroundColor="blue";
+
+        document.write("현재 시간 : ");
+        document.write(time.getHours(), "시, ");
+        document.write(time.getMinutes(), "분, ");
+        document.write(time.getSeconds(), "초");
+    </script>
+</body>
+</html>

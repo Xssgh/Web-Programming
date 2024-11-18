@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[]로 배열 만들기</title>
+</head>
+<body>
+    <h3>[]로 배열 만들기</h3>
+    <hr>
+    <script>
+        let bar = [20, 5, 9, 45, 1];
+        document.write("let bar = [20, 5, 9, 45, 1]");
+
+        for(let i = 0; i<5; i++){
+            let size = bar[i];
+            while(size>0){
+                document.write("*");
+                size--;
+            }
+            document.write(bar[i] + "<br>");
+        }
+    </script>
+</body>
+</html>
