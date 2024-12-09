@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company History</title>
+        <!-- 회사 연혁 -->
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Dark background */
+            color: #fff; /* White text for contrast */
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: red;
+        }
+
+        /* Timeline Style */
+        .timeline {
+            position: relative;
+            padding: 0;
+            list-style: none;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background-color: #444;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item:nth-child(odd) {
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) {
+            text-align: left;
+        }
+
+        .timeline-item .content {
+            display: inline-block;
+            max-width: 45%;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .timeline-item .content::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            background-color: #3498db;
+            border-radius: 50%;
+            border: 3px solid #1a1a1a;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) .content::before {
+            right: -20px;
+        }
+
+        .timeline-item:nth-child(even) .content::before {
+            left: -20px;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #e74c3c;
+        }
+
+        .timeline-item p {
+            font-size: 1rem;
+            color: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 10px;
+            }
+
+            .timeline-item .content {
+                max-width: 100%;
+                text-align: left;
+            }
+
+            .timeline-item:nth-child(odd) .content::before,
+            .timeline-item:nth-child(even) .content::before {
+                left: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="section-title">NEOWIZ History</h1>
+        <ul class="timeline">
+            <li class="timeline-item">
+                <div class="content">
+                    <h3>1997~2009</h3>
+                    <p>(주)네오위즈 (현 네오위즈홀딩스) 설립.</p>
+                    <p>네오위즈 기업분할 통해 (주)네오위즈게임즈 설립</p>
+                    <p>일본 게임 기업 (주)게임온 인수</p>
+                    <p>2007 대한민국 게임대상 사회공헌우수기업상 수상</p>
+                    <p>정보보호관리체계(ISMS) 인증 획득</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="content">
+                    <h3>2010~2019</h3>
+                    <p>분당 구미동 신사옥 이전</p>
+                    <p>피망, 국가고객만족도(NCSI) 웹보드 게임 부문 1위 선정(업계 최초 3년 연속)</p>
+                    <p>제5회 대한민국코스닥대상 최우수투명경영상 수상</p>
+                    <p>‘GWP 2011 대한민국 일하기 좋은 기업’ 본상 수상 (2년 연속)</p>
+                    <p>‘제10회 정보보호 대상’ 특별상 수상</p>
+                    <p>‘2011 고용창출 100대 기업’ 선정</p>
+                    <p>‘2012 직무발명제도 운영 우수사례’ 최우수상 수상</p>
+                    <p>‘제49회 무역의 날’ 수출의 탑 2억불 수상</p>
+                    <p>판교 신사옥 ‘네오위즈판교타워’ 이전</p>
+                    <p>MMORPG 블레스, 한국콘텐츠진흥원 이달의 우수게임 수상</p>
+                    <p>(주)네오위즈로 사명 변경</p>
+                    <p>브라운더스트 개발사 (주)네오위즈겜프스(구 겜프스) 자회사 편입</p>
+                    <p>디제이맥스 리스펙트, 2017 대한민국 게임대상 PC/비디오/아케이드/보드 부문 우수상</p>
+                    <p>온라인FPS 게임 '아바(A.V.A)' IP인수</p>
+                    <p>(주)사우스포게임즈 PC게임 '스컬(Skul)' 퍼블리싱 계약</p>
+                    <p>(주)젤리스노우스튜디오 PC게임 '메탈유닛(Metal Unit)' 퍼블리싱 계약</p>
+                </div>
+            </li>
+            <li class="timeline-item">
+                <div class="content">
+                    <h3>2020~2024</h3>
+                    <p>2020년도 경기도성실납세직장</p>
+                    <p>데스나이트 키우기 개발사 (주)슈퍼플렉스 자회사 편입</p>
+                    <p>매드미믹(Mad Mimic) PC게임 '댄디 에이스(Dandy Ace)' 퍼블리싱 계약</p>
+                    <p>(주)루트리스 스튜디오 PC게임 ‘사망여각(8Doors: Arum's Afterlife Adventure)’ 퍼블리싱 계약
+                        드루와던전 개발사 (주)퀘스트게임즈 자회사 편입</p>
+                    <p>(주)팀써니트 PC게임 '블레이드 어썰트(Blade Assault)' 퍼블리싱 계약</p>
+                    <p>스컬(Skul), 2020 대한민국 게임대상 '인디 게임상' 수상
+                        플레비 퀘스트, 2020 대한민국 게임대상 '우수상' 수상</p>
+                    <p>플레비 퀘스트, 2021 대만 게임쇼 '베스트 디자인상' 수상</p>
+                    <p>모바일 게임 개발사 (주)스티키핸즈 자회사 편입</p>
+                    <p>원더포션 PC게임 '산나비' 퍼블리싱 계약</p>
+                    <p>네오위즈, 한국벤처창업학회 '혁신기업가대상' 수상</p>
+                    <p>메구스타 게임즈 PC게임 ‘언소울드(Unsouled)' 퍼블리싱 계약</p>
+                    <p>나날이 스튜디오 모바일 게임 2종(포레스트 아일랜드/원시전쟁) 퍼블리싱 계약
+                        모바일 게임 개발사 (주)겜플리트 자회사 편입</p>
+                    <p>모바일 게임 개발사 (주)하이디어 자회사 편입</p>
+                    <p>퀄리아츠 모바일 게임 '아이돌리 프라이드(Idoly Pride)' 국내 퍼블리싱 계약</p>
+                    <p>네오위즈 자회사 '하이디어' 김동규 대표, 2022 대한민국 콘텐츠 대상 대통령표창 수상</p>
+                    <p>'스컬(Skul)', 한국 인디 게임 최초 누적 판매량 100만 장 돌파</p>
+                    <p>네오위즈 ‘P의 거짓’, ‘NAVGTR’서 4관왕 수상</p>
+                    <p>네오위즈 'P의 거짓', 웨비 어워드 3관왕 달성</p>
+                    <p>네오위즈 PC 패키지 게임 '산나비', 차이나조이 ‘2024 인디게임 개발 어워드’ 수상
+                    </p>
+                    <p>네오위즈 'P의 거짓', 애플 디자인 어워드 2024에서 비주얼 및 그래픽 부문 수상</p>
+                    <p>지노게임즈 '안녕서울: 이태원편', BIC 페스티벌서 ‘대상·아트’ 2관왕</p>
+
+
+                </div>
+            </li>
+        
+        </ul>
+    </div>
+</body>
+</html>

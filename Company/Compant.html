@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Introduction</title>
+    <!-- 회사 메인 화면 -->
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <style>
+
+    body{
+        background-color: black !important;
+        color:white;
+    }
+    .hero-section {
+      background-color: black !important;
+      background-image: url('https://cdn.neowiz.com/neowiz-site/assets/images/about/about-pc-5.png'); 
+      background-size: cover; 
+      background-position: center;
+      padding: 60px 0;
+    }
+    .service-section {
+      background-color: black !important;
+      padding: 60px 0;
+    }
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+    }
+    .top-menu {
+      background-color: #343a40; /* Dark gray background */
+      color: white;
+      padding: 10px 20px;
+    }
+    .hero-text {
+      background-color: rgba(0, 0, 0, 0.8); /* 배경 이미지 위에 반투명 검은색 오버레이 추가 */
+      padding: 80px 0;
+    }
+
+    /* 링크에 마우스를 올렸을 때 색상 변경 */
+    .nav-link:hover, .text-white:hover {
+    text-decoration: none; /* 언더라인 제거 */
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar (Bootstrap + Tailwind) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="d-flex w-100 align-items-center justify-content-between">
+        
+        <!-- 왼쪽 텍스트 -->
+        <a class="navbar-brand" href="#">
+          <img src="https://www.neowiz.com/images/logo-neowiz@2x.png" 
+          alt="Logo" width="30" height="30" class="d-inline-block align-top">
+          NEOWIZ
+      </a>
+        
+        <!-- 메뉴바 (오른쪽) -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">연혁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">홍보</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" target="_blank">채용과정</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" target="_blank">채용정보</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="top-menu">
+    <div class="container">
+      <div class="d-flex justify-content-end">
+        <a href="https://www.neowiz.com/aboutus" class="text-white mx-3" target="_blank">메인 </a>
+        <a href="history.html" class="text-white mx-3" target="_blank">역사</a>
+        <a href="advertise.html" class="text-white mx-3" target="_blank">홍보</a>
+        <a href="hire.html" class="text-white mx-3" target="_blank">채용과정</a>
+        <a href="getjob.html" class="text-white mx-3" target="_blank">채용정보</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section (Tailwind for Flexbox) -->
+  <div class="hero-section text-center">
+    <div class="container mx-auto py-20 hero-text">
+      <h1 class="text-4xl font-bold text-red-600">세상이 즐거워지는 마법</h1>
+      <p class="text-lg">독창적이고 즐거운 콘텐츠를 지속적으로 선보이는 글로벌 게임사</p>
+      <a href="#about" class="btn mt-4 px-6 py-2 rounded bg-[#2C2C2C] text-white hover:bg-red-600">Learn More</a>
+
+    </div>
+  </div>
+  <div class="mt-6 border-t-2 border-[#2C2C2C] w-1/2 mx-auto"></div>
+
+  <!-- About Us Section (Bootstrap + Tailwind) -->
+  <div id="about" class="container my-5">
+    <h2 class="text-center text-3xl font-semibold mb-4 text-red-600">NEOWIZ</h2>
+    <p class="text-center text-gray-600">네오위즈는 '세상이 즐거워지는 마법'이라는 슬로건 아래 
+
+        독창적이고 즐거운 콘텐츠를 지속적으로 선보이는 글로벌 게임사입니다.</p><br>
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h4 class="font-semibold">Our Mission</h4>
+        <p>국내를 넘어 글로벌 전역에 PC와 콘솔, 모바일 플랫폼을 아우르는 다양한 장르의 게임들을 선보이고 있으며, 투자 및 제휴를 통한 새로운 IP 발굴 노력도 이어나가고 있는 회사입니다.</p>
+      </div>
+      <div class="col-md-6">
+  
+        <h4 class="font-semibold">Our Vision</h4>
+        <p>네오위즈는 열정을 다해 최고의 게임을 만들어 고객에게 특별한 경험을 선사하고,
+
+            이를 통해 차별화된 가치를 창출하겠습니다.</p>
+      </div><br>
+    </div>
+    <p class="text-center text-gray-600 mt-4">2020년 유통을 담당한 플레비 퀘스트: 더 크루세이드와 Skul이 각각 그 해 대한민국 게임대상에서 우수상과 인디게임상을 수상했습니다. 그리고 아예 이 기세를 바탕으로 2023년 P의 거짓을 발매, 그해 대한민국 게임대상 7관왕 및 대상을 차지하였습니다.
+
+        2017년 3월 사명이 네오위즈 게임즈에서 네오위즈로 바뀌었습니다.
+        
+        2020년 후반에 네오위즈플레이스튜디오(NPS), 네오위즈에이블스튜디오(NAS), 네오위즈INS 자회사 3곳을 흡수합병하였습니다.</p>
+  </div>
+
+  <div class="mt-6 border-t-2 border-[#2C2C2C] w-1/2 mx-auto"></div>
+  <!-- Services Section (Tailwind CSS for Grid Layout) -->
+  <div id="services" class="service-section bg-gray-200">
+    <div class="container mx-auto py-20">
+      <h2 class="text-center text-3xl font-semibold mb-6 text-white">Services</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <a href="https://poker.pmang.com/sudda" target="_blank" class="text-black hover:text-black hover:no-underline">
+              <img class="rounded-lg" src="https://cdn.neowiz.com/neowiz-site/assets/game/NWZ_Mob_Sub_Games_img_19-ntlhlmr6.jpg" alt="Service 2" width="500" height="500">
+              <h5 class="font-semibold mt-4">피망 섯다</h5>
+              <p>카드 게임</p>
+            </a>
+          </div>
+          
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <a href="https://store.steampowered.com/app/1147560/Skul_The_Hero_Slayer/" target="_blank" class="text-black hover:text-black hover:no-underline">
+              <img class="rounded-lg" src="https://cdn.neowiz.com/neowiz-site/assets/game/NWZ_Mob_Sub_Games_img_31-by4oaefg.jpg" alt="Service 2" width="500" height="500">
+              <h5 class="font-semibold mt-4">스컬</h5>
+              <p>액션로그라이크</p>
+            </a>
+          </div>
+          
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <a href="https://store.steampowered.com/agecheck/app/960170/" target="_blank" class="text-black hover:text-black hover:no-underline">
+              <img class="rounded-lg" src="https://cdn.neowiz.com/neowiz-site/assets/game/NWZ_Mob_Sub_Games_img_33-dckb4luj.jpg" alt="Service 2" width="500" height="500">
+              <h5 class="font-semibold mt-4">디제이맥스 리스펙트 V</h5>
+              <p>음악</p>
+            </a>
+          </div>
+          
+
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <a href="https://playneowiz.com/sanabi" target="_blank" class="text-black hover:text-black hover:no-underline">
+            <img class="rounded-lg" src="https://cdn.neowiz.com/neowiz-site/assets/game/NWZ_Mob_Sub_Games_img_13-kitf7bg6.jpg" alt="Service 2" width="500" height="500">
+            <h5 class="font-semibold mt-4 text-black">산나비</h5>
+            <p>액션</p></a>
+          </div>
+
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <a href="https://www.liesofp.com/ko-kr/" target="_blank" class="text-black hover:text-black hover:no-underline">
+            <img class="rounded-lg" src="https://cdn.neowiz.com/neowiz-site/assets/game/NWZ_Mob_Sub_Games_img_01-(1)-ii98zvk2.jpg" alt="Service 2" width="500" height="500">
+            <h5 class="font-semibold mt-4 text-black">P의 거짓</h5>
+            <p>액션</p></a>
+          </div>
+
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <a href="https://playneowiz.com/aka" target="_blank" class="text-black hover:text-black hover:no-underline">
+            <img class="rounded-lg" src="https://cdn.neowiz.com/neowiz-site/assets/game/NWZ_Mob_Sub_Games_img_15-6uvbutj7.jpg" alt="Service 2" width="500" height="500">
+            <h5 class="font-semibold mt-4 text-black">aka</h5>
+            <p>어드벤처</p></a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section (Bootstrap + Tailwind) -->
+  <div id="contact" class="container my-5">
+    <h2 class="text-center text-3xl font-semibold mb-4">문의사항 제출</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">이름</label>
+        <input type="text" class="form-control" id="name" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <label for="message">메모</label>
+        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="btn mt-4 px-6 py-2 rounded bg-[#2C2C2C] text-white hover:bg-red-600">Submit</button>
+      
+
+    </form>
+  </div>
+
+  <!-- Footer Section (Bootstrap + Tailwind) -->
+  <div class="footer text-center bg-dark text-white py-3">
+    <p>&copy; 2024 NEOWIZ | WEB-Program lecture</p>
+  </div>
+
+  <!-- Bootstrap JS and Dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

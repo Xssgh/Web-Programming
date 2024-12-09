@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- 회사 채용 과정 및 혜택 -->
+    <style>
+        /* General Styling */
+        body {
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          margin: 0;
+          padding: 0;
+          background-color: black;
+          color: white;
+        }
+      
+        .section {
+          padding: 60px 20px;
+          text-align: center;
+        }
+      
+        .section-title {
+          font-size: 2rem;
+          margin-bottom: 20px;
+          color: red;
+          font-weight: bold;
+        }
+      
+        /* Recruitment Process */
+        .recruitment-steps {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
+      
+        .step-card {
+          background-color: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          max-width: 250px;
+          text-align: left;
+        }
+      
+        .step-card h3 {
+          font-size: 1.25rem;
+          color: black;
+          margin-bottom: 10px;
+        }
+      
+        .step-card p {
+          font-size: 0.95rem;
+          color: #666;
+        }
+      
+        /* Employee Benefits */
+        .benefits-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 20px;
+        }
+      
+        .benefit-card {
+          background-color: #ffffff;
+          border-radius: 8px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          padding: 20px;
+          text-align: left;
+        }
+      
+        .benefit-card h4 {
+          font-size: 1.25rem;
+          color: black;
+          margin-bottom: 10px;
+        }
+      
+        .benefit-card p {
+          font-size: 0.95rem;
+          color: #666;
+        }
+      
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .recruitment-steps, .benefits-grid {
+            flex-direction: column;
+            gap: 15px;
+          }
+        }
+      </style>
+      
+</head>
+<body>
+    <div class="section">
+        <!-- Recruitment Process -->
+        <h2 class="section-title">채용 과정</h2>
+        <div class="recruitment-steps">
+          <div class="step-card">
+            <h3>1단계: 지원하기</h3>
+            <p>가장 잘 어울릴 것 같은 직무에 가장 잘 소개할 수 있는 이력서와 포트폴리오를 제출합니다.</p>
+          </div>
+          <div class="step-card">
+            <h3>2단계: 1차 인터뷰</h3>
+            <p>우리의 문제와 목표를 함께 고민하고 해결할 수 있는지 이야기를 나눕니다.</p>
+          </div>
+          <div class="step-card">
+            <h3>3단계: 2차 인터뷰</h3>
+            <p>팀과 같은 목표를 향해 시너지를 내며 함께 일할 수 있는 동료인지 이야기를 나눕니다.</p>
+          </div>
+          <div class="step-card">
+            <h3>4단계: 합류하기</h3>
+            <p>처우 협의와 입사일을 결정합니다.네오위즌이 되어 게임의 판도를 뒤집을 멋진 여정을 함께합니다.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <!-- Employee Benefits -->
+        <h2 class="section-title">직원 혜택</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <h4>구내식당</h4>
+            <p>하루 세 끼 모두 무료로 즐겨보세요. 다양한 종류의 식사와 Take Out 메뉴까지 책임집니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>리프레시 휴가</h4>
+            <p>3년 근속 시마다 감사의 마음을 담아 10일의 유급 휴가를 드립니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>단체상해보험</h4>
+            <p>업무 중 뿐 아니라 일상생활의 크고 작은 사고까지 배우자 그리고 자녀까지 책임집니다</p>
+          </div>
+          <div class="benefit-card">
+            <h4>사내 대출 제도</h4>
+            <p>네오위즌의 경제적 안정을 위해 결혼 준비, 보금자리, 대출 이자 지원 등 다양한 사내 대출 제도를 운영합니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>건강 검진 지원</h4>
+            <p>혹시 모를 증상을 조기에 발견하고 건강한 삶을 위해 건강 검진 비용을 지원합니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>소통</h4>
+            <p>팀원부터 대표까지 서로를 'OO님'이라고 호칭합니다. 누구나 자유롭게 서로의 생각을 주고받으며 더 나은 아이디어를 만들어 나갑니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>심리 상담 서비스</h4>
+            <p>건강한 마음은 업무 몰입의 첫 시작입니다. 네오위즈는 사내 심리 상담 서비스인 '마인드 브릿지'를 운영합니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>사내 마사지 서비스</h4>
+            <p>일하며 결린 목과 어깨를 책임집니다. 전문 마사지사 분들이 함께하는 사내 마사지 서비스 '헬스 키핑'을 운영합니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>위탁 보육료 지원</h4>
+            <p>질 높은 교육 기회를 제공하기 위해 자녀의 어린이집 위탁 보육료를 지원합니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>경조사 지원</h4>
+            <p>경조사에서부터 유가족 지원까지 기쁠 때도, 슬플 때도 함께 하겠습니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>출산 전후 휴가</h4>
+            <p>새로운 가족을 만나게 된 설렘과 축하를 담아 3+1개월의 출산 전후 휴가를 유급으로 제공합니다..</p>
+          </div>
+          <div class="benefit-card">
+            <h4>카페테리아</h4>
+            <p>드립 커피에서부터 따끈한 빵과 간식까지 직장인의 체력 포션을 책임집니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>사내 게임룸</h4>
+            <p>누구보다 게임을 사랑하는 사람들이 모여있습니다. 플레이스테이션, XBOX 등 다양한 게임을 동료와 함께 플레이할 수 있습니다.</p>
+          </div>
+          <div class="benefit-card">
+            <h4>사내 게임 대회</h4>
+            <p>우리는 게임으로 세계를 놀라게 하고 싶습니다. 그전에 게임으로 동료를 먼저 놀라게 해주세요. 놀라게 한 만큼 놀라운 상금을 드립니다.</p>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
